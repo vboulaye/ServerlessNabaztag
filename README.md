@@ -40,3 +40,12 @@ Firmware features
 * The rabbit fetches the current time from a time server and plays the corresponding sound every hour
 * Autonomously wake up at go to sleep
 * Respond to ping request
+
+Compilation
+-----------
+
+In order to compile a new firmware, you first need to build the Metal compiler in the ./compiler directory using  make
+
+You'll need to install i386 libraries for this:
+sudo apt install freeglut3-dev:i386 libglu1-mesa-dev:i386
+

@@ -24,7 +24,7 @@ mtl_comp : vcomp/libvcomp.a $(COMMON_OBJS) $(COMP_OBJS)
 #	g++  $^ -o $@ vcomp/*.o
 
 mtl_simu : vcomp/libvcomp.a $(COMMON_OBJS) $(SIMU_OBJS)
-	g++  -m32 $^ -o $@ vcomp/libvcomp.a -framework GLUT -framework OpenGL
+	g++  -m32 $^ -o $@ vcomp/libvcomp.a -lGL -lGLU -lglut 
 #	g++  $^ -o $@ vcomp/*.o
 
 # .c.o:	
